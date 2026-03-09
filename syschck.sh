@@ -9,7 +9,7 @@ if [ ! -d "$salida" ]; then
  fi
 
 # CPU [Topología e integridad de nucleos]
-lscpu -a > "$salida"/check_cpu.txt
+lscpu > "$salida"/check_cpu.txt
 lscpu -e >> "$salida"/check_cpu.txt
 
 # PCI [Hardware y controladores activos]
